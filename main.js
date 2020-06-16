@@ -5,10 +5,13 @@ xmlhttp.onreadystatechange = function() {
 
         //Code Dealing With The API Data Goes Here
 
+        console.log(apiResult.name);
+        console.log(apiResult.weather[0].description);
+
         function displayCity() {
             var headerText = document.getElementById("city")
             var cityNameHeading = document.createElement("h1");
-            var cityName = document.createTextNode(apiResult[0]);
+            var cityName = document.createTextNode(apiResult.name);
         
             cityNameHeading.appendChild(cityName);
             headerText.appendChild(cityNameHeading);
@@ -16,7 +19,16 @@ xmlhttp.onreadystatechange = function() {
         
         displayCity();
 
+        function displayWeather() {
+            var mainText = document.getElementById("weather")
+            var weatherDescriptionText = document.createElement("h2");
+            var weatherDescription = document.createTextNode(apiResult.weather[0].description);
         
+            weatherDescriptionText.appendChild(weatherDescription);
+            mainText.appendChild(weatherDescriptionText);
+        }
+        
+        displayWeather();
 
     }
 };
