@@ -8,3 +8,45 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+body {
+    background-image: url(img/mountains.jpg);
+    background-size: cover;
+    color: #01274b;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #ffffff;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
